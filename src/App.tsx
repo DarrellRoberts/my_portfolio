@@ -3,13 +3,7 @@ import './AppRes.css'
 import Back from "./assets/background.mp4"
 import { DownOutlined } from "@ant-design/icons"
 
-interface VideoProps {
-  src: string,
-  autoPlay: boolean,
-  loop: boolean
-}
-
-const App: React.FC<VideoProps>  = () => {
+const App: React.FC  = () => {
   const autoPlay: boolean = true;
   const loop: boolean = true;
   return (
