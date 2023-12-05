@@ -11,7 +11,7 @@ const App: React.FC  = () => {
       <video 
       className="" 
       loop 
-      autoplay="true"
+      autoPlay="true"
       playbackRate="0.5"
       height="500px"
       muted>
