@@ -3,17 +3,21 @@ import './AppRes.css'
 import Back from "./assets/background.mp4"
 import { DownOutlined } from "@ant-design/icons"
 
-const App: React.FC  = () => {
+interface VideoProps {
+  src: string,
+  autoPlay: boolean,
+  loop: boolean
+}
 
+const App: React.FC<VideoProps>  = () => {
+  const autoPlay: boolean = true;
+  const loop: boolean = true;
   return (
     <>
     <div>
       <video 
-      className="" 
-      loop 
-      autoPlay="true"
-      playbackRate="0.5"
-      height="500px"
+      loop={loop} 
+      autoPlay={autoPlay}
       muted>
       <source src={Back} type="video/mp4"/>
       </video>
