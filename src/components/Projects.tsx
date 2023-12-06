@@ -1,6 +1,6 @@
 import "../style/Projects.css"
 
-const Projects = () => {
+const Projects:React.FC = () => {
     return (
         <div className="projCon">
 
