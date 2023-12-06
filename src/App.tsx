@@ -2,7 +2,6 @@ import "./style/App.css";
 import "./style/AppRes.css";
 import Back from "./assets/background.mp4";
 import { DownOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
 import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
 import Projects from "./components/Projects";
 
