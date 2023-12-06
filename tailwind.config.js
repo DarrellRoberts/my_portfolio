@@ -11,6 +11,9 @@ export default {
         "back": 'url("/src/assets/background.mp4")'
       },
     },
+    colors: {
+      'primary': '#207673',
+    },
   },
   variants: {
     extend: {
