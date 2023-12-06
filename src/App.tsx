@@ -9,9 +9,12 @@ const App: React.FC = () => {
   return (
     <>
       <div className="heroBack">
+        {Back ? (
         <video className="vidBack" loop={true} autoPlay={true} muted>
           <source src={Back} type="video/mp4" />
         </video>
+        ) : <div className="vidBack">
+          </div>}
         <div className="name">
           <h1>
             Darrell <br /> Roberts

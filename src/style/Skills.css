@@ -49,3 +49,23 @@ cursor: pointer;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-left: 5rem;
 }
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-popover .ant-popover-inner {
+width: 100px;
+-webkit-box-shadow: -1px 3px 5px 3px #000000b0; 
+box-shadow: -1px 3px 5px 3px #000000b0;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+:where(.css-6j9yrn).ant-popover .ant-popover-inner {
+width: 100px;
+-webkit-box-shadow: -1px 3px 5px 3px #000000b0; 
+box-shadow: -1px 3px 5px 3px #000000b0;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}

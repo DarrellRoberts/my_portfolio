@@ -35,6 +35,7 @@ overflow-x: hidden;
 
 .vidBack {
   max-width: none;
+  background-color: black;
 }
 
 .name {
