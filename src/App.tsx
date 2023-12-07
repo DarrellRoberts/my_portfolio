@@ -3,7 +3,7 @@ import "./style/AppRes.css";
 import Back from "./assets/background.mp4";
 import { DownOutlined } from "@ant-design/icons";
 import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
-import Projects from "./components/Projects";
+import Projects from "./components/ProjectsFolder/Projects";
 import Header from "./components/Header";
 
 const App: React.FC = () => {
