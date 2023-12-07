@@ -2,3 +2,13 @@
     background-color:#207673;
     height: 500px;
 }
+
+.projectTitle {
+    font-family: var(--mainL);
+    font-size: 5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    letter-spacing: 25px;
+    color: white;
+    text-align: center;
+}
