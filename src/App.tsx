@@ -22,6 +22,7 @@ const App: React.FC = () => {
             Darrell <br /> Roberts
           </h1>
           <h2>Fullstack Developer</h2>
+          <div className="Vcon">
           <DownOutlined
             onClick={() =>
               window.scrollTo({
@@ -31,6 +32,7 @@ const App: React.FC = () => {
             }
             className="V"
           />
+          </div>
         </div>
       </div>
       <AnimateSkills />
