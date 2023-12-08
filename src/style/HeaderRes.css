@@ -1,0 +1,63 @@
+.fixed {
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.w-screen {
+    position: fixed;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-top-color: #207673;
+    border-left-color: #207673;
+    height: 106px;
+    animation-name: headerAni;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@media  screen and (max-width: 1600px) {
+}
+
+@media  screen and (max-width: 1300px) {
+}
+
+@media  screen and (max-width: 800px) {
+@keyframes headerAni3 {
+0% {height: 108px}
+100% {height: 250px}
+}
+        
+@keyframes headerAni4 {
+0% {height: 250px}
+100% {height: 108px}
+}
+.fixed {
+    animation-duration: 0.75s;
+    animation: headerAni2 0.75s 1, headerAni4 0.75s 1;
+}
+.w-screen {
+    animation-duration: 0.75s;
+    animation: headerAni 0.75s 1, headerAni3 0.75s 1;
+    height: 250px;
+}
+.outArr {
+    transform: rotate(45deg);
+}
+.innArr {
+    transform: rotate(220deg);
+}
+
+@keyframes spinIn {
+    0% { transform: rotate(0deg)};
+    100% { transform: rotate(220deg)};
+    }
+    
+    @keyframes spinOut {
+    0% { transform: rotate(0deg)};
+    100% { transform: rotate(45deg)};
+    }
+}
+
+@media  screen and (max-width: 400px) {
+
+  }
