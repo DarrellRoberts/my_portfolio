@@ -82,3 +82,23 @@
         gap: 10px;
     }
   }
+
+  @media  screen and (max-width: 400px) {
+    .overpackCon {
+        height: 1050px;
+    }
+    .queueGrid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .skillsItem {
+        height: 175px;
+        width: 150px;
+        margin-bottom: 50px;
+        }
+    .skillsTitle {
+        letter-spacing: 10px;
+    }
+  }

@@ -21,7 +21,7 @@
 
 @media  screen and (max-width: 1400px) {
   .name {
-    top: 150px;
+    top: 400px;
   }
   
   .name h1 {
@@ -41,28 +41,6 @@
   }
 }
 
-@media  screen and (max-width: 1050px) {
-  .name {
-    top: 100px;
-  }
-  
-  .name h1 {
-    font-size: 5rem;
-    line-height: 75px;
-  }
-  
-  .name h2 {
-    margin-top: 0.5rem;
-    font-size: 3rem;
-  }
-  
-  .V {
-    color: white;
-    margin-top: 3rem;
-    font-size: 3rem;
-  }
-}
-
 @media  screen and (max-width: 800px) {
   .vidBack {
     height: 1000px;
@@ -75,7 +53,7 @@
   }
   
   .name h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: var(--main);
     text-shadow: black;
     text-align: center;
@@ -98,4 +76,22 @@
     0% {transform: translateY(0)}
   }
 
+}
+
+@media  screen and (max-width: 400px) {
+  .name h1 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  
+  .name h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .V {
+    color: white;
+    margin-top: 6rem;
+    font-size: 3rem;
+  }
 }

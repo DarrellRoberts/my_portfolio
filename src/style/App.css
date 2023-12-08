@@ -23,6 +23,7 @@
 :root {
   --main: "Roboto Slab";
   --mainL: "Kanit";
+  --mainColor: "#207673";
 }
 
 .heroBack {
@@ -35,6 +36,7 @@ overflow-x: hidden;
 
 .vidBack {
   max-width: none;
+  min-height: 1000px;
   background-color: black;
 }
 
@@ -75,6 +77,12 @@ overflow-x: hidden;
 100% {text-shadow: rgb(0, 0, 0) 5px 5px 30px}
 }
 
+/* .Vcon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+} */
+
 .V {
   color: white;
   margin-top: 5rem;
@@ -86,6 +94,10 @@ overflow-x: hidden;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  width: 100%;
 }
 
 @keyframes arrowMove {
