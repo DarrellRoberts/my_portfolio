@@ -1,8 +1,7 @@
-import Ham from "../assets/hamburgericon.png"
 import "../style/Header.css"
 import "../style/HeaderRes.css"
 import { useEffect, useState } from "react";
-import { RightOutlined, LeftOutlined } from "@ant-design/icons";
+import { LeftOutlined } from "@ant-design/icons";
 
 
 const Header: React.FC = () => {
@@ -28,7 +27,7 @@ window.removeEventListener('scroll', handleScroll);
 };
 },
  []);
-
+console.log(scrollPosition);
 return (
     <>
 {max ? (
