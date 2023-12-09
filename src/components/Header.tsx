@@ -27,7 +27,7 @@ window.removeEventListener('scroll', handleScroll);
 };
 },
  []);
-console.log(scrollPosition);
+ scrollPosition;
 return (
     <>
 {max ? (
