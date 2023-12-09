@@ -8,6 +8,13 @@ import './Carousel.css';
 
 const Element = BannerAnim.Element;
 
+interface data {
+  pic: string;
+  map: string;
+  color: string;
+  background: string
+}
+
 const textData = [
 {
 content: "Use the arrows to navigate through my previous or ongoing projects.",
@@ -48,7 +55,7 @@ Githublink: "https://github.com/DarrellRoberts/pirate-work-management-tool",
     ]
 ;
 
-let dataArray = [
+const dataArray:data[] = [
   {
     pic:'',
     map: "",
@@ -78,14 +85,15 @@ let dataArray = [
     map: 'https://i.imgur.com/0WvvF7L.jpg',
     color: '#E3CAA2',
     background: '#c4ac89',
-  },{
+  },
+  {
   pic:'',
   map: "",
   color: '#298e89',
   background: '#207673'
   }
 ];
-dataArray = dataArray.map(item => ({ ...item, ...textData }));
+const mapArray = dataArray.map(item => ({ ...item, ...textData }));
 
 const Carousel = ({ className = 'details-switch-demo' }) => {
   const [showInt, setShowInt] = useState(0);
@@ -128,8 +136,8 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
       { translateX: [0, 300], opacity: [1, 0] },
       { translateX: [0, -300], opacity: [1, 0] },
     ];
-    if (newShowInt >= dataArray.length) {
-      newShowInt = dataArray.length - 1;
+    if (newShowInt >= mapArray.length) {
+      newShowInt = mapArray.length - 1;
     }
     setShowInt(newShowInt);
     setImgAnim(newImgAnim);
@@ -141,7 +149,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
     return e.key === 'map' ? 800 : 1000;
   };
 
-  const imgChildren = dataArray.map((item, i) => (
+  const imgChildren = mapArray.map((item, i) => (
     <Element
       key={i}
       style={{
@@ -158,7 +166,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         key="img-wrapper"
       >
         <div className={`${className}-map map${i}`} key="map">
-          <img src={item.map} alt="" width="100%" />
+          <img src={`${item.map}`} alt="" width="100%" />
         </div>
         <div className={`${className}-pic pic${i}`} key="pic">
           <img src={item.pic} alt="" width="100%" />
@@ -167,7 +175,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
     </Element>
   ));
 
-  const textChildren = dataArray.map((item, i) => (
+  const textChildren = mapArray.map((item, i) => (
     <Element key={i}>
       <QueueAnim type="bottom" duration={1000} delay={[!i ? delay + 500 : 800, 0]}>
         <h1 key="h1">{item[i].title}</h1>
@@ -181,7 +189,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
 
   return (
     <>
-    <div className={`${className}-wrapper`} style={{ background: dataArray[showInt].background }}>
+    <div className={`${className}-wrapper`} style={{ background: mapArray[showInt].background }}>
     <h3 className="projectTitle">Portfolio</h3>
       <div className={className}>
         <BannerAnim
@@ -214,7 +222,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         <TweenOneGroup enter={{ opacity: 0, type: 'from' }} leave={{ opacity: 0 }}>
           {showInt > 0 && (
           <LeftOutlined style={{color: "black"}} type="left" key="left" onClick={onLeft} />)}
-          {showInt < dataArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
+          {showInt < mapArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
         </TweenOneGroup>
         <h1>HELLO</h1>
       </div>
