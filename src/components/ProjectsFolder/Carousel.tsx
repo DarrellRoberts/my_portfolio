@@ -4,8 +4,6 @@ import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
-import TeamUp1 from "../../assets/teamup1.jpg"
-import TeamUp2 from "../../assets/teamup2.jpg"
 import './Carousel.css';
 
 const Element = BannerAnim.Element;

@@ -5,7 +5,6 @@ import { DownOutlined } from "@ant-design/icons";
 import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
 import Projects from "./components/ProjectsFolder/Projects";
 import Header from "./components/Header";
-import Carousel from "./components/ProjectsFolder/Carousel"
 
 const App: React.FC = () => {
   return (

@@ -27,6 +27,7 @@ window.removeEventListener('scroll', handleScroll);
 };
 },
  []);
+ scrollPosition;
 return (
     <>
 {max ? (
