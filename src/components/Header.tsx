@@ -31,17 +31,17 @@ window.removeEventListener('scroll', handleScroll);
 return (
     <>
 {max ? (
-<div className="w-screen bg-primary p-8 z-10">
+<div className="w-screen bg-primary z-10">
 <LeftOutlined 
 onClick={() => setMax(false)}
 className="outArr"
 />
-<ul className="flex justify-evenly items-center">
-<li>Home</li>
-<li>Skills</li>
-<li>Portfolio</li>
-<li>About</li>
-<li>Contact</li>
+<ul className="flex justify-evenly text-center">
+<a className="headerLinks" href=""><li>Home</li></a>
+<a className="headerLinks" href=""><li>Skills</li></a>
+<a className="headerLinks" href=""><li>Portfolio</li></a>
+<a className="headerLinks" href=""><li>Contact</li></a>
+<a className="headerLinks" href=""><li>About</li></a>
 </ul>
 </div>
 ) : (

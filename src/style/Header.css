@@ -51,6 +51,11 @@ animation-duration: 1s;
 animation-iteration-count: 1;
 }
 
+.headerLinks a {
+margin-bottom: 50px;
+color: red;
+}
+
 
 @keyframes spinIn {
 0% { transform: rotate(0deg)};
