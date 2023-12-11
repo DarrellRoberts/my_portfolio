@@ -5,6 +5,7 @@ import { DownOutlined } from "@ant-design/icons";
 import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
 import Projects from "./components/ProjectsFolder/Projects";
 import Header from "./components/Header";
+import Contact from "./components/ContactFolder/Contact"
 
 const App: React.FC = () => {
   return (
@@ -37,6 +38,7 @@ const App: React.FC = () => {
       </div>
       <AnimateSkills />
       <Projects />
+      <Contact />
     </>
   );
 };

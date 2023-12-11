@@ -4,7 +4,7 @@ import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
-import './Carousel.css';
+import '../../style/Carousel.css';
 
 const Element = BannerAnim.Element;
 
@@ -224,12 +224,8 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
           <LeftOutlined style={{color: "black"}} type="left" key="left" onClick={onLeft} />)}
           {showInt < mapArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
         </TweenOneGroup>
-        <h1>HELLO</h1>
       </div>
-      <h1>HELLO</h1>
     </div>
-    <button onClick={onRight}>On Right</button>
-    <button onClick={onLeft}>On Left</button>
     </>
   );
 };
