@@ -39,14 +39,17 @@
   }
   
   .details-switch-demo-map {
-    /* width: 250px;
-    top: 60px;
-    left: 30px; */
-    top: 225px;
+    width: 250px;
+    /* top: 60px;  */
+    left: 65px;
+    /* top: 225px; */
+    color: rgb(43, 88, 43);
   }
   .details-switch-demo-map.map2{
-    width: 200px;
-    left: 50px;
+    width: 250px;
+    /* top: 60px;  */
+    left: 65px;
+    /* top: 225px; */
   }
   
   .details-switch-demo-text-wrapper .banner-anim-elem {
