@@ -64,7 +64,7 @@ const dataArray:data[] = [
   },
   {
     pic:'https://i.imgur.com/hHx551i.jpg',
-    map: "https://i.imgur.com/FQ8lPtR.jpg",
+    map: "https://raw.githubusercontent.com/DarrellRoberts/myWebsite/src/assets/svgs/svgFile.svg",
     color: '#93a5ca',
     background: '#8298c6',
   },
