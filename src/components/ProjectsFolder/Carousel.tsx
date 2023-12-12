@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
+import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
 import '../../style/Carousel.css';
@@ -23,7 +24,22 @@ title: 'Portfolio Carousel',
 {
 content: "TeamUp is an app I created with three other group members at my Full-stack Developer Bootcamp. It's designed for users new to a city in Germany and want to meet new people via sports. The app has many features, such as: account creation and login, profile editing, user rating, badges, searching for events, joining events, creating events, liking events, submitting comments, replying to comments and more. We were selected to present this project at the end of the bootcamp to an audience of over 150 people. I along with another team member worked primarily on the Front-end, whilst our other two group members worked on the Back-end",
 title: 'TeamUp (Group Project - 4)',
-stack: "MERN",
+stack: (
+<div className="flex justify-evenly mt-3">
+<Popover title="MongoDB">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+</Popover>
+<Popover title="Express.js">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+</Popover>
+<Popover title="React">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+</Popover>
+<Popover title="Node.js">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+</Popover >
+</div>
+),
 link: "https://teamup-de.netlify.app/",
 Githublink: "https://github.com/hari-pace/TeamUp",
 },
@@ -181,8 +197,10 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         <h1 key="h1">{item[i].title}</h1>
         <em key="em" style={{ background: item.background }} />
         <p key="p">{item[i].content}</p>
-        <span key="span">{item[i].link ? `URL: ${item[i].link}` : null}</span>
-        <a key="a">{item[i].Githublink ? `GitHub Repo: ${item[i].Githublink}` : null}</a>
+        <span key="span"><a href={item[i].link}>{item[i].link ? `Link: ${item[i].link}` : null}</a></span>
+        <br/>
+        <a key="a" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
+        <div key="div">{item[i].stack}</div>
       </QueueAnim>
     </Element>
   ));
