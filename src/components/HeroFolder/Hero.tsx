@@ -2,7 +2,6 @@ import "../../style/Hero.css";
 import "../../style/HeroRes.css";
 import Back from "../../assets/background.mp4";
 import { DownOutlined } from "@ant-design/icons";
-import Profilebildbw from "../../assets/Profilbildbw.jpg"
 
 const Hero: React.FC = () => {
 return (

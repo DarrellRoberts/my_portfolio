@@ -6,7 +6,7 @@ const Contact:React.FC = () => {
 <div className="h-[800px] bg-primary">
 <h2 className="contactTitle">Contact</h2>
 <div className="flex justify-center items-center flex-col overflow-visible ">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeba6ZIZi2HQ-QulNeJCxUms9EfsAAREhxVzX9wyWU1ze_zUg/viewform?embedded=true" width="640" height="721" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeba6ZIZi2HQ-QulNeJCxUms9EfsAAREhxVzX9wyWU1ze_zUg/viewform?embedded=true" width="640" height="721">Loading…</iframe>
 <p className="flex">
     <a
     className="mr-10 ml-10"
