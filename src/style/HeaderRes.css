@@ -38,7 +38,11 @@
 .w-screen {
     animation-duration: 0.75s;
     animation: headerAni 0.75s 1, headerAni3 0.75s 1;
-    height: 250px;
+    height: 280px;
+    flex-direction: column;
+}
+.w-screen li {
+    margin: 5p 0px;
 }
 .outArr {
     transform: rotate(45deg);
