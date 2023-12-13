@@ -113,7 +113,7 @@ Githublink: "https://github.com/DarrellRoberts/pirate-work-management-tool",
 const dataArray:data[] = [
   {
     pic:'',
-    map: "",
+    map: "https://i.imgur.com/UfNLSSP.png",
     color: '#298e89',
     background: '#207673',
   },
@@ -143,7 +143,7 @@ const dataArray:data[] = [
   },
   {
   pic:'',
-  map: "",
+  map: "https://i.imgur.com/UfNLSSP.png",
   color: '#298e89',
   background: '#207673'
   }
