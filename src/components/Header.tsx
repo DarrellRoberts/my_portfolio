@@ -32,15 +32,44 @@ return (
     <>
 {max ? (
 <ul className="w-screen bg-primary z-10 flex justify-evenly items-center text-center border-white border-2">
-{/* <LeftOutlined 
-onClick={() => setMax(false)}
-className="outArr"
-/> */}
-<a  href=""><li className="listHeader">Skills</li></a>
-<a  href=""><li className="listHeader">Portfolio</li></a>
-<a  href=""><li className="listHeader">Home</li></a>
-<a  href=""><li className="listHeader">Contact</li></a>
-<a  href=""><li className="listHeader">About</li></a>
+<a
+onClick={() =>
+    window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+        })
+}
+><li className="listHeader">Home</li></a>
+<a              
+onClick={() =>
+    window.scrollTo({
+    top: 1000,
+    behavior: "smooth",
+        })
+}><li className="listHeader">Skills</li></a>
+<a
+onClick={() =>
+    window.scrollTo({
+    top: 1800,
+    behavior: "smooth",
+        })
+}
+><li className="listHeader">Portfolio</li></a>
+<a
+onClick={() =>
+    window.scrollTo({
+    top: 2600,
+    behavior: "smooth",
+        })
+}><li className="listHeader">About</li></a>
+<a
+onClick={() =>
+    window.scrollTo({
+    top: 3500,
+    behavior: "smooth",
+        })
+}
+><li className="listHeader">Contact</li></a>
 </ul>
 ) : (
 <div className="p-8 fixed z-10 border-2 header-transition">

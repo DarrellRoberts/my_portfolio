@@ -1,44 +1,20 @@
-import "./style/App.css";
-import "./style/AppRes.css";
-import Back from "./assets/background.mp4";
-import { DownOutlined } from "@ant-design/icons";
+import "./style/App.css"
+import Hero from "./components/HeroFolder/Hero";
 import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
 import Projects from "./components/ProjectsFolder/Projects";
 import Header from "./components/Header";
 import Contact from "./components/ContactFolder/Contact"
+import About from "./About"
 
 const App: React.FC = () => {
   return (
     <>
     <Header />
-      <div className="heroBack">
-        {Back ? (
-        <video className="vidBack" loop={true} autoPlay={true} muted>
-          <source src={Back} type="video/mp4" />
-        </video>
-        ) : <div className="vidBack">
-          </div>}
-        <div className="name">
-          <h1>
-            Darrell <br /> Roberts
-          </h1>
-          <h2>Fullstack Developer</h2>
-          <div className="Vcon">
-          <DownOutlined
-            onClick={() =>
-              window.scrollTo({
-                top: 1000,
-                behavior: "smooth",
-              })
-            }
-            className="V"
-          />
-          </div>
-        </div>
-      </div>
-      <AnimateSkills />
-      <Projects />
-      <Contact />
+    <Hero />
+    <AnimateSkills />
+    <Projects />
+    <About />
+    <Contact />
     </>
   );
 };

@@ -1,9 +1,9 @@
-.contactTitle {
+.aboutTitle {
     font-family: var(--mainL);
     font-size: 5rem;
     margin-top: 2rem;
     padding-top: 1rem;
     letter-spacing: 25px;
+    color: black;
     text-align: center;
-    color: white;
 }
