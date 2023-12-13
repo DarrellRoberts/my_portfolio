@@ -1,9 +1,11 @@
 .skillsTitle {
-    margin: 2rem 0px;
-    font-size: 5rem;
-    text-align: center;
     font-family: var(--mainL);
-    letter-spacing:25px;
+    font-size: 5rem;
+    margin: 2rem 0px;
+    padding-top: 1rem;
+    letter-spacing: 25px;
+    color: black;
+    text-align: center;
     grid-area: 1 / 1 / 2 / 5;
 }
 

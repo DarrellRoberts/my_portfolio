@@ -10,7 +10,8 @@ import "../../style/SkillsRes.css";
 
 const AnimateSkills = () => {
   return (
-    <OverPack 
+    <OverPack
+    id="skills" 
     className="overpackCon">      
     <TweenOne
         key="0"

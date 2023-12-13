@@ -83,6 +83,7 @@ color: red;
 .listHeader:hover {
     -webkit-box-shadow: -1px 3px 15px 3px white; 
     box-shadow: -1px 3px 15px 3px white;
+    cursor: pointer;
     
 }
 .listHeader:active {
