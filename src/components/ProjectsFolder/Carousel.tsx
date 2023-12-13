@@ -41,26 +41,65 @@ stack: (
 </div>
 ),
 link: "https://teamup-de.netlify.app/",
-Githublink: "https://github.com/hari-pace/TeamUp",
+Githublink:"https://github.com/hari-pace/TeamUp"
+,
 },
 {
-content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my former school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch whilst also reading fantastic books. This is a Full-stack project and will many capabilities, such as: account registration and login with Cloudinary photo upload, view user statistics and scores, score books directly on the website, suggest new books and run a function to select one at random and many more. This is a huge project and I am currently working on the Back-end and API which you can view. The Front-end will come later",
-title: 'The BookClub Brothers (Solo Project)',
-stack: "MERN (for now, only Node.js, Express.js and MongoDB with deployment on Render)",
+content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. I have created the Backend and API so far, which you can view. I am currently working on the Frontend which will come later.",
+title: 'The BookClub Brothers API (Solo Project)',
+stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="MongoDB">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+  </Popover>
+  <Popover title="Express.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+  </Popover>
+  <Popover title="Node.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+  </Popover >
+  </div>
+  ),
 link: "https://bookclubbrothers-backend.onrender.com/",
 Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
 content: "This Pokifight game was created by myself and another group member. I took on the role of the Front-end developer whilst they took over the Back-end. We used a pokemon API in order to fetch and display over 800 characters. Then we added multiple features, such as: username entry, enable and disable soundtrack, player selection, tutorial, opponent randomiser, game mechanics and a dynamic player leaderboard.",
 title: 'Pokifight Game (Group Project - 2)',
-stack: "MERN",
+stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="MongoDB">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+  </Popover>
+  <Popover title="Express.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+  </Popover>
+  <Popover title="React">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  </Popover>
+  <Popover title="Node.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+  </Popover >
+  </div>
+  ),
 link: "https://golden-fudge-4d4499.netlify.app/",
 Githublink: "https://github.com/DarrellRoberts/pokifight_frontend",
   },
 {
 content: "Using TypeScript I created a pirate-themed tool to track either you personal or business to-dos. Looking at other similar applications or to-do lists, it struck me at how dull and uninspiring they were. Therefore, I chose to go with a pirate-theme to make it more interesting and to actually make the user want to return to their to-do list.",
 title: 'Pirate-themed Work Management Tool (Solo Project)',
-stack: "TypeScript with React and Tailwind CSS",
+stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="React">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  </Popover>
+  <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
+  </Popover>
+  <Popover title="Tailwind CSS">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
+  </Popover>
+  </div>
+  ),
 link: "",
 Githublink: "https://github.com/DarrellRoberts/pirate-work-management-tool",
       },
@@ -80,25 +119,25 @@ const dataArray:data[] = [
   },
   {
     pic:'',
-    map: "https://i.imgur.com/8ubWd9T.png",
+    map: "https://i.imgur.com/1RoPh6h.png",
     color: '#93a5ca',
     background: '#8298c6',
   },
   {
     pic: '',
-    map: 'https://i.imgur.com/a7CvBfi.png',
+    map: 'https://i.imgur.com/T2aJwcz.png',
     color: 'rgb(72, 150, 72)',
     background: 'rgb(43, 88, 43)',
   },
   {
     pic: '',
-    map: 'https://i.imgur.com/5MDmzrz.png',
+    map: 'https://i.imgur.com/bgwXOVU.png',
     color: '#03115c',
     background: '#020a33',
   },
   {
     pic: '',
-    map: 'https://i.imgur.com/bZhusxH.png',
+    map: 'https://i.imgur.com/yBSWHQp.png',
     color: '#E3CAA2',
     background: '#c4ac89',
   },
@@ -197,7 +236,7 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         <h1 key="h1">{item[i].title}</h1>
         <em key="em" style={{ background: item.background }} />
         <p key="p">{item[i].content}</p>
-        <span key="span"><a href={item[i].link}>{item[i].link ? `Link: ${item[i].link}` : null}</a></span>
+        <span key="span"><a href={item[i].link}>{item[i].link ? `URL` : null}</a></span>
         <br/>
         <a key="a" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
         <div key="div">{item[i].stack}</div>
