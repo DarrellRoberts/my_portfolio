@@ -1,14 +1,13 @@
-import "../style/Footer.css"
-import "../style/FooterRes.css"
 
 
-const Footer: React.FC = () => {
+
+const SocialLinks: React.FC = () => {
 
 return (
 <>
-<p className="flex-col">
+<p className="flex ml-40 mt-5">
     <a
-    className="mr-10"
+    className=""
     href="https://www.github.com/DarrellRoberts" 
     target="_blank" 
     rel="noreferrer"> 
@@ -24,5 +23,5 @@ return (
 )
 }
 
-export default Footer
+export default SocialLinks
 

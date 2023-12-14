@@ -40,28 +40,28 @@ onClick={() =>
         })
 }
 ><li className="listHeader">Home</li></a>
-<a              
+<a
 onClick={() =>
     window.scrollTo({
     top: 1000,
     behavior: "smooth",
         })
-}><li className="listHeader">Skills</li></a>
+}><li className="listHeader">About</li></a>
 <a
 onClick={() =>
     window.scrollTo({
-    top: 1800,
+    top: 1900,
     behavior: "smooth",
         })
 }
 ><li className="listHeader">Portfolio</li></a>
-<a
+<a              
 onClick={() =>
     window.scrollTo({
-    top: 2600,
+    top: 2700,
     behavior: "smooth",
         })
-}><li className="listHeader">About</li></a>
+}><li className="listHeader">Skills</li></a>
 <a
 onClick={() =>
     window.scrollTo({
