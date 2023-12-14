@@ -3,6 +3,7 @@ import "../../style/Projects.css"
 import "../../style/ProjectsRes.css"
 
 
+
 const Projects:React.FC = () => {
     return (
         <>

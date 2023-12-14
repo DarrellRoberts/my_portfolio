@@ -7,3 +7,77 @@
     color: black;
     text-align: center;
 }
+
+.rounded-lg {
+    -webkit-box-shadow: -1px 7px 15px 6px #0000007c; 
+    box-shadow: -1px 7px 15px 6px #0000007c;
+}
+
+.circle1, .circle2, .circle3 {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: -1px 7px 15px 6px #0000007c; 
+box-shadow: -1px 7px 15px 6px #0000007c;
+}
+
+.circle1:hover, .circle2:hover, .circle3:hover{
+    -webkit-box-shadow: -1px 7px 15px 6px #207673; 
+    box-shadow: -1px 7px 15px 6px #207673;
+    cursor: pointer;
+}
+
+.circle1 {
+    align-self: center;
+    animation: animateCircles 5s infinite alternate, animateCircles1 5s infinite alternate;
+}
+
+.circle2 {
+    align-self: start;
+    animation: animateCircles2 5s infinite alternate, animateCircles2x 5s infinite alternate;
+}
+
+.circle3 {
+    align-self: end;
+    margin-right: 10%;
+    animation: animateCircles3 5s infinite alternate, animateCircles3x 5s infinite alternate;
+}
+
+@keyframes animateCircles {
+    0% {transform: translateY(200px)};
+    /* 100% {transform: translateY(100px)}; */
+}
+
+@keyframes animateCircles1 {
+    0% {transform: translateX(200px)};
+    /* 100% {transform: translateY(100px)}; */
+}
+
+@keyframes animateCircles2x {
+    0% {transform: translateX(200px)};
+    /* 100% {transform: translateY(100px)}; */
+}
+
+@keyframes animateCircles2 {
+    0% {transform: translateY(300px)};
+}
+
+@keyframes animateCircles3 {
+    0% {transform: translateY(-100px)};
+    /* 100% {transform: translateY(-100px)}; */
+}
+
+@keyframes animateCircles3x {
+    0% {transform: translateX(-200px)};
+    /* 100% {transform: translateY(100px)}; */
+}
+
+.circle1 h2, .circle2 h2, .circle3 h2 {
+    font-family: var(--mainL);
+    font-weight: 500;
+    font-size: 2rem;
+}
