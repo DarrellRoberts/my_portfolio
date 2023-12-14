@@ -6,7 +6,8 @@ import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
 import '../../style/Carousel.css';
-
+import { OverPack } from "rc-scroll-anim";
+import TweenOne from "rc-tween-one";
 const Element = BannerAnim.Element;
 
 interface data {
@@ -246,9 +247,26 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
 
   return (
     <>
-    <div className={`${className}-wrapper`} style={{ background: mapArray[showInt].background }}>
-    <h3 className="projectTitle">Portfolio</h3>
-      <div className={className}>
+    <div className={className ? `${className}-wrapper` : `bg-primary h-screen`} style={{ background: mapArray[showInt].background }}>
+    <OverPack
+    id="skills" 
+    className="">      
+    <TweenOne
+        key="0"
+        animation={{ opacity: 1 }}
+        className="code-box-shape"
+          style={{ opacity: 0 }}
+      />
+      <QueueAnim
+        key="queue"
+        className=""
+        leaveReverse
+      > 
+    <h3 key="a"
+    className="projectTitle">Portfolio</h3>
+      <div
+      key="b" 
+      className={className}>
         <BannerAnim
           prefixCls={`${className}-img-wrapper`}
           sync
@@ -282,6 +300,8 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
           {showInt < mapArray.length - 1 && (<RightOutlined style={{color: "black"}} type="right" key="right" onClick={onRight} />)}
         </TweenOneGroup>
       </div>
+      </QueueAnim>
+    </OverPack>
     </div>
     </>
   );

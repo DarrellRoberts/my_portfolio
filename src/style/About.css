@@ -38,7 +38,7 @@ box-shadow: -1px 7px 15px 6px #0000007c;
 
 .circle2 {
     align-self: start;
-    animation: animateCircles2 5s infinite alternate, animateCircles2x 5s infinite alternate;
+    animation: animateCircles2 6s infinite alternate, animateCircles2x 5s infinite alternate;
 }
 
 .circle3 {
@@ -53,12 +53,12 @@ box-shadow: -1px 7px 15px 6px #0000007c;
 }
 
 @keyframes animateCircles1 {
-    0% {transform: translateX(200px)};
+    /* 0% {transform: translateX(200px)}; */
     /* 100% {transform: translateY(100px)}; */
 }
 
 @keyframes animateCircles2x {
-    0% {transform: translateX(200px)};
+    /* 0% {transform: translateX(-100px)}; */
     /* 100% {transform: translateY(100px)}; */
 }
 
@@ -67,12 +67,12 @@ box-shadow: -1px 7px 15px 6px #0000007c;
 }
 
 @keyframes animateCircles3 {
-    0% {transform: translateY(-100px)};
+    0% {transform: translateY(-300px)};
     /* 100% {transform: translateY(-100px)}; */
 }
 
 @keyframes animateCircles3x {
-    0% {transform: translateX(-200px)};
+    /* 0% {transform: translateX(-200px)}; */
     /* 100% {transform: translateY(100px)}; */
 }
 

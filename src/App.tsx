@@ -4,14 +4,14 @@ import AnimateSkills from "./components/SkillsFolder/AnimateSkills";
 import Projects from "./components/ProjectsFolder/Projects";
 import Header from "./components/Header";
 import Contact from "./components/ContactFolder/Contact"
-import About from "./components/AboutFolder/About"
+import AboutTest2 from "./components/AboutFolder/AboutTest2"
 
 const App: React.FC = () => {
   return (
     <>
     <Header />
     <Hero />
-    <About />
+    <AboutTest2 />
     <Projects />
     <AnimateSkills />
     <Contact />
