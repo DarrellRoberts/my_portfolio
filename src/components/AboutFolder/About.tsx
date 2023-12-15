@@ -1,6 +1,6 @@
 import "../../style/About.css"
-import Profilbildbw from "../../assets/Profilbildbw.jpg"
-import SocialLinks from "../SocialLinks"
+import Profilbildbw from "../../../public/Profilbildbw.jpg"
+import SocialLinks from "../../components/AboutFolder/SocialLinks"
 
 const About: React.FC = () => {
     return (
