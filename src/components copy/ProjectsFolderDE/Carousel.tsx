@@ -35,7 +35,7 @@ stack: (
 <Popover title="Express.js">
 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
 </Popover>
-<Popover title="React">
+<Popover title="React.js">
 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
 </Popover>
 <Popover title="Node.js">
@@ -63,7 +63,7 @@ stack: (
   </Popover >
   </div>
   ),
-link: "https://bookclubbrothers-backend.onrender.com/",
+link: "https://bookclubbrothers-backend.onrender.com/books",
 Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
@@ -77,7 +77,7 @@ stack: (
   <Popover title="Express.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
   </Popover>
-  <Popover title="React">
+  <Popover title="React.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="Node.js">
@@ -93,7 +93,7 @@ content: "Unter Verwendung von TypeScript habe ich ein Tool mit einem Piraten-Th
 title: 'Arbeitsmanagement-Tool (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
-  <Popover title="React">
+  <Popover title="React.ts">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
