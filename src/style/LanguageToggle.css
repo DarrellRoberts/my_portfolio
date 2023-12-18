@@ -1,0 +1,26 @@
+.transButton {
+    border-width: 5px;
+    border-radius: 80px;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    padding: 50px;
+    font-size: 2rem;
+    font-family: var(--main);
+    background-color: rgba(0, 0, 0, 0.803);
+}
+
+.transButton:hover {
+    background-color: #207673a0;
+}
+
+@media  screen and (max-width: 800px) {
+.transButton {
+    top: 800px;
+    left: 50px;
+    padding: 0px;
+}
+      }

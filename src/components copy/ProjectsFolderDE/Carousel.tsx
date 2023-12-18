@@ -20,12 +20,12 @@ interface data {
 
 const textData = [
   {
-    content: "Verwenden Sie die Pfeile, um durch meine bisherigen oder laufenden Projekte zu navigieren.",
-    title: 'Portfolio Karussell',
+    content: "Verwende die Pfeile, um durch meine bisherigen oder laufenden Projekte zu navigieren.",
+    title: 'Portfolio',
   }
   ,
 {
-content: "TeamUp ist eine App, die ich mit drei anderen Gruppenmitgliedern während meines Full-Stack Developer Bootcamps erstellt habe. Sie ist für Benutzer konzipiert, die neu in einer Stadt in Deutschland sind und über Sport neue Leute kennenlernen möchten. Die App verfügt über viele Funktionen, darunter: Kontoerstellung und -anmeldung, Profilbearbeitung, Benutzerbewertung, Abzeichen, Suche nach Veranstaltungen, Teilnahme an Veranstaltungen, Erstellung von Veranstaltungen, Liken von Veranstaltungen, Abgeben von Kommentaren, Beantworten von Kommentaren und mehr. Wir wurden ausgewählt, dieses Projekt am Ende des Bootcamps vor einem Publikum von über 150 Personen zu präsentieren. Ich habe zusammen mit einem anderen Teammitglied hauptsächlich am Frontend gearbeitet, während unsere beiden anderen Gruppenmitglieder am Backend gearbeitet haben.",
+content: "TeamUp ist eine App, die ich mit drei anderen Gruppenmitgliedern während meines Full-Stack Developer Bootcamps erstellt habe. Sie ist für Benutzer konzipiert, die über Sport neue Leute kennenlernen möchten. Die App verfügt über viele Funktionen, darunter: Kontoerstellung und -anmeldung, Profilbearbeitung, Benutzerbewertung, Abzeichen, Suche nach Veranstaltungen, Teilnahme an Veranstaltungen, Erstellung von Veranstaltungen, Liken von Veranstaltungen, Abgeben von Kommentaren, Beantworten von Kommentaren und mehr. ",
 title: 'TeamUp (Gruppenprojekt - 4)',
 stack: (
 <div className="flex justify-evenly mt-3">
@@ -48,7 +48,7 @@ Githublink:"https://github.com/hari-pace/TeamUp"
 ,
 },
 {
-content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die einem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit gegründet, in Kontakt zu bleiben und gleichzeitig fantastische Bücher zu lesen. Dies ist ein Full-Stack-Projekt und hat bisher folgende Funktionen: JWT-Kontoerstellung und -anmeldung, Cloudinary-Foto-Upload, Benutzerstatistiken, Bewertung von Büchern, Vorschlag neuer Bücher und Zufallsbuchauswahl. Ich habe bisher das Backend und die API erstellt, die Sie einsehen können. Ich arbeite derzeit am Frontend, das später fertiggestellt wird.",
+content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die einem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit gegründet, in Kontakt zu bleiben und gleichzeitig fantastische Bücher zu lesen. Dies ist ein Full-Stack-Projekt und hat bisher folgende Funktionen: JWT-Kontoerstellung und -anmeldung, Cloudinary-Foto-Upload, Benutzerstatistiken, Bewertung von Büchern, Vorschlag neuer Bücher und Zufallsbuchauswahl.",
 title: 'The BookClub Brothers API (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
@@ -107,8 +107,8 @@ link: "",
 Githublink: "https://github.com/DarrellRoberts/pirate-work-management-tool",
       },
 {
-  content: "Das war nur eine Handvoll meiner Projekte, aber schauen Sie immer wieder vorbei, da ich dieses Portfolio regelmäßig aktualisiere.",
-  title: 'Ich hoffe, Sie haben etwas gefunden, das Ihnen gefällt!',
+  content: "Das war nur eine Handvoll meiner Projekte, aber schaue immer wieder vorbei, da ich dieses Portfolio regelmäßig aktualisiere.",
+  title: 'Ich hoffe, Du hast etwas gefunden, das Dir gefällt!',
 }
     ]
 ;

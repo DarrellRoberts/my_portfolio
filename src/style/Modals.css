@@ -27,6 +27,7 @@ color: white
     background-color: var(--mainColor);
     color: white;
     border-color: white;
+    display: none;
 }
 :where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
     color: black;
@@ -45,6 +46,7 @@ color: white
     background-color: var(--mainColor);
     color: white;
     border-color: white;
+    display: none;
 }
 :where(.css-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
     color: black;

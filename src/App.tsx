@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const [showGerman, setShowGerman] = useState<boolean>(false)
   return (
     <>
-  <LanguageToggle setShowGerman={setShowGerman} />
+  <LanguageToggle showGerman={showGerman} setShowGerman={setShowGerman} />
 <Routes>
     <Route path="/" element={showGerman ? (
     <>

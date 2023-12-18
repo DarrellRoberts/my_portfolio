@@ -77,6 +77,7 @@
     }
     .skillsTitle {
         font-size: 3rem;
+        letter-spacing: 10px;
     }
     .skillsGrid {
         gap: 10px;

@@ -17,7 +17,7 @@ const Nutshell: React.FC<ModalProps> = ({isNutShellOpen, setIsNutShellOpen}) => 
       };
 
     return (
-        <Modal title="In a nutshell" 
+        <Modal title="Kurzgesagt" 
         open={isNutShellOpen} 
         onOk={handleOk} 
         onCancel={handleCancel}>
