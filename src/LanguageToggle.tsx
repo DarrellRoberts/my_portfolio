@@ -1,12 +1,27 @@
+import "./style/LanguageToggle.css"
+
 interface props {
+showGerman: boolean;
 setShowGerman: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const LanguageToggle: React.FC<props> = ({setShowGerman}) => {
+const LanguageToggle: React.FC<props> = ({showGerman, setShowGerman}) => {
     return (
         <div>
-        <button onClick={() => setShowGerman(false)}>English</button>
-        <button onClick={() => setShowGerman(true)}>Deutsch</button>
+        {showGerman ? (
+        <button
+        className="transButton" 
+        onClick={() => setShowGerman(false)}>
+        EN
+        </button>
+        ) : (
+        <button
+        className="transButton" 
+        onClick={() => setShowGerman(true)}>
+        DE
+        </button>
+        )
+}
       </div>
     )
 }

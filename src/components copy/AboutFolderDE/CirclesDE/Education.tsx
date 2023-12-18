@@ -17,7 +17,7 @@ const Education: React.FC<ModalProps> = ({isEducationOpen, setIsEducationOpen}) 
       };
 
     return (
-        <Modal title="Education" 
+        <Modal title="Ausbildung" 
         open={isEducationOpen} 
         onOk={handleOk} 
         onCancel={handleCancel}>

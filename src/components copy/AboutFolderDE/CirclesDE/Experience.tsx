@@ -17,7 +17,7 @@ const Experience: React.FC<ModalProps> = ({isExpOpen, setIsExpOpen}) => {
       };
 
     return (
-        <Modal title="Experience" 
+        <Modal title="Erfahrung" 
         open={isExpOpen} 
         onOk={handleOk} 
         onCancel={handleCancel}>
@@ -31,7 +31,7 @@ const Experience: React.FC<ModalProps> = ({isExpOpen, setIsExpOpen}) => {
 
 <p>Derzeit arbeite ich nicht nur an eigenen Projekten, sondern leiste auch Beiträge zu Open-Source-Repositories.</p>
 
-<p>Wenn Sie an einigen meiner Arbeiten interessiert sind, finden Sie mein Portfolio unten.</p>
+<p>Wenn Du an einigen meiner Arbeiten interessiert bist, finde mein Portfolio unten.</p>
 
       </Modal>
     )
