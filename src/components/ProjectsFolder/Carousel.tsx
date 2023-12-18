@@ -62,7 +62,7 @@ stack: (
   </Popover >
   </div>
   ),
-link: "https://bookclubbrothers-backend.onrender.com/",
+link: "https://bookclubbrothers-backend.onrender.com/books",
 Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {

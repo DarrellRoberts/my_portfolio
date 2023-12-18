@@ -35,7 +35,7 @@ stack: (
 <Popover title="Express.js">
 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
 </Popover>
-<Popover title="React">
+<Popover title="React.js">
 <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
 </Popover>
 <Popover title="Node.js">
@@ -63,7 +63,7 @@ stack: (
   </Popover >
   </div>
   ),
-link: "https://bookclubbrothers-backend.onrender.com/",
+link: "https://bookclubbrothers-backend.onrender.com/books",
 Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
@@ -77,7 +77,7 @@ stack: (
   <Popover title="Express.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
   </Popover>
-  <Popover title="React">
+  <Popover title="React.js">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="Node.js">
@@ -93,7 +93,7 @@ content: "Unter Verwendung von TypeScript habe ich ein Tool mit einem Piraten-Th
 title: 'Arbeitsmanagement-Tool (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
-  <Popover title="React">
+  <Popover title="React.ts">
   <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
   </Popover>
   <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
@@ -239,9 +239,9 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         <h1 key="h1">{item[i].title}</h1>
         <em key="em" style={{ background: item.background }} />
         <p key="p">{item[i].content}</p>
-        <span key="span"><a href={item[i].link}>{item[i].link ? `URL` : null}</a></span>
+        <span key="span"><a target="_blank" href={item[i].link}>{item[i].link ? `URL` : null}</a></span>
         <br/>
-        <a key="a" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
+        <a key="a" target="_blank" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
         <div key="div">{item[i].stack}</div>
       </QueueAnim>
     </Element>
