@@ -1,0 +1,34 @@
+:where(.css-dev-only-do-not-override-6j9yrn).ant-modal .ant-modal-content {
+background-color: var(--mainColor);
+color: white
+}
+:where(.css-6j9yrn).ant-modal .ant-modal-content {
+    background-color: var(--mainColor);
+    color: white
+}
+:where(.css-dev-only-do-not-override-6j9yrn).ant-modal .ant-modal-title {
+    background-color: var(--mainColor);
+    color: white
+}
+:where(.css-6j9yrn).ant-modal .ant-modal-title {
+    background-color: var(--mainColor);
+    color: white
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    background-color: white;
+    color: black;
+}
+:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default {
+    background-color: white;
+    color: black;
+}
+:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled) {
+    background-color: var(--mainColor);
+    color: white;
+    border-color: white;
+}
+:where(.css-dev-only-do-not-override-6j9yrn).ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+    color: black;
+    border-color: black;
+}
