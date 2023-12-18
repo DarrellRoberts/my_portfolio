@@ -6,6 +6,7 @@ import { Popover } from "antd"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import PropTypes from 'prop-types';
 import '../../style/Carousel.css';
+import '../../style/CarouselRes.css';
 import { OverPack } from "rc-scroll-anim";
 import TweenOne from "rc-tween-one";
 const Element = BannerAnim.Element;

@@ -71,10 +71,6 @@ box-shadow: -1px 7px 15px 6px #0000007c;
     /* 100% {transform: translateY(-100px)}; */
 }
 
-@keyframes animateCircles3x {
-    /* 0% {transform: translateX(-200px)}; */
-    /* 100% {transform: translateY(100px)}; */
-}
 
 .circle1 h2, .circle2 h2, .circle3 h2 {
     font-family: var(--mainL);
@@ -89,4 +85,7 @@ box-shadow: -1px 7px 15px 6px #0000007c;
     height: 530px;
     -webkit-box-shadow: -1px 7px 15px 6px #0000007c; 
     box-shadow: -1px 7px 15px 6px #0000007c;
+}
+.aboutCon {
+    height: 800px;
 }

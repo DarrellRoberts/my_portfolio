@@ -9,6 +9,7 @@ import { Spin } from "antd"
 import Nutshell from "./Circles/Nutshell";
 import Education from "./Circles/Education";
 import Experience from "./Circles/Experience";
+import "../../style/AboutRes.css"
 
 const AboutTest: React.FC = () => {
   const [isNutShellOpen, setIsNutShellOpen] = useState<boolean>(false);
