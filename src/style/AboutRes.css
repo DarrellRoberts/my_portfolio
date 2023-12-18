@@ -1,0 +1,52 @@
+@media  screen and (max-width: 1600px) {
+}
+
+@media  screen and (max-width: 1300px) {
+}
+
+@media  screen and (max-width: 800px) {
+    .aboutCon {
+        /* height: 650px; */
+    }
+    .aboutTitle {
+        font-size: 3rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        letter-spacing: 20px;
+    }
+    .ppic {
+        border-radius: 10px;
+        width: 175px;
+        height: 250px;
+        -webkit-box-shadow: -1px 7px 15px 6px #0000007c; 
+        box-shadow: -1px 7px 15px 6px #0000007c;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .justify-between {
+        flex-direction: column;
+    }
+    .circle1, .circle2, .circle3 {
+        width: 100px;
+        height: 100px;
+    }
+    .circle1 h2, .circle2 h2, .circle3 h2 {
+        font-size: 1rem;
+    }
+    @keyframes animateCircles {
+        0% {transform: translateX(100px)};
+        /* 100% {transform: translateY(100px)}; */
+    }
+    
+    @keyframes animateCircles2 {
+        0% {transform: translateX(150px)};
+    }
+    
+    @keyframes animateCircles3 {
+        0% {transform: translateX(-100px)};
+        /* 100% {transform: translateY(-100px)}; */
+    } 
+}
+
+@media  screen and (max-width: 400px) {
+}

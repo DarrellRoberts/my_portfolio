@@ -1,0 +1,42 @@
+@media  screen and (max-width: 1600px) {
+}
+
+@media  screen and (max-width: 1300px) {
+}
+
+@media  screen and (max-width: 800px) {
+  .details-switch-demo {
+    margin: 40px auto;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+  .details-switch-demo img {
+    /* width: 200px; */
+  }
+  .details-switch-demo-text-wrapper .banner-anim-elem {
+    padding: 10px;
+}
+.details-switch-demo-map {
+  left: 0px;
+  top: 0px;
+  width: 200px;
+}
+.details-switch-demo-map.map2{
+  width: 200px;
+  /* top: 60px;  */
+  left: 0px;
+  top: 0px;
+}
+.details-switch-demo-text-wrapper p {
+  font-size: 0.60rem;
+  margin-bottom: 30px;
+}
+}
+
+@media  screen and (max-width: 400px) {
+
+}

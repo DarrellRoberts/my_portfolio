@@ -11,4 +11,5 @@
 h3.text-5xl {
     color: white;
     font-family: var(--mainL);
+    text-align:center;
 }

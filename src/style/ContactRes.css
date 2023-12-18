@@ -1,0 +1,29 @@
+@media  screen and (max-width: 1600px) {
+  }
+  
+  @media  screen and (max-width: 1300px) {
+  }
+  
+  @media  screen and (max-width: 800px) {
+    .contactTitle {
+        font-size: 3rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        letter-spacing: 20px;
+    }
+    h3.text-5xl {
+        font-size: 2rem;
+    }
+  }
+
+  @media  screen and (max-width: 400px) {
+    .contactTitle {
+        font-size: 2rem;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        letter-spacing: 5px;
+    }
+    h3.text-5xl {
+        font-size: 1rem;
+    }
+  }
