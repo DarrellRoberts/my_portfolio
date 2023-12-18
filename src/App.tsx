@@ -17,7 +17,7 @@ import ContactDE from "./components copy/ContactFolderDE/Contact"
 
 
 const App: React.FC = () => {
-  const [showGerman, setShowGerman] = useState<boolean>(false)
+  const [showGerman, setShowGerman] = useState<boolean>(true)
   return (
     <>
   <LanguageToggle showGerman={showGerman} setShowGerman={setShowGerman} />
