@@ -1,6 +1,5 @@
 import "../../style/About.css"
 import Profilbildbw from "../../assets/Profilbildbw.jpg"
-import SocialLinks from "./SocialLinks"
 import { OverPack } from "rc-scroll-anim";
 import TweenOne from "rc-tween-one";
 import QueueAnim from "rc-queue-anim";
@@ -32,9 +31,10 @@ const AboutTest: React.FC = () => {
         src={Profilbildbw} 
         alt="profile_picture" 
         width="400" 
-        className="ml-20 rounded-lg"
+        className="ppic"
         />) :
-        <div className="ml-20 rounded-lg w-[400px]">
+        <div className="ppic">
+          Loading...
           </div>}
         <div className="circle1">
         <h2>In a nutshell</h2>
@@ -45,9 +45,6 @@ const AboutTest: React.FC = () => {
         <div className="circle3">
         <h2>Experience</h2>
         </div>
-        </div>
-        <div key="c">
-        <SocialLinks />
         </div>      
       </QueueAnim>
     </OverPack>

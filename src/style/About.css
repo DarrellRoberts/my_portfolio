@@ -81,3 +81,12 @@ box-shadow: -1px 7px 15px 6px #0000007c;
     font-weight: 500;
     font-size: 2rem;
 }
+
+.ppic {
+    margin-left: 40px;
+    border-radius: 10px;
+    width: 400px;
+    height: 530px;
+    -webkit-box-shadow: -1px 7px 15px 6px #0000007c; 
+    box-shadow: -1px 7px 15px 6px #0000007c;
+}
