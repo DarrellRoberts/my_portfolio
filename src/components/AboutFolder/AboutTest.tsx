@@ -34,7 +34,7 @@ const AboutTest: React.FC = () => {
         className="ppic"
         />) :
         <div className="ppic">
-          Loading...
+          Loading..
           </div>}
         <div className="circle1">
         <h2>In a nutshell</h2>
