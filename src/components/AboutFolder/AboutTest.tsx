@@ -35,6 +35,7 @@ const AboutTest: React.FC = () => {
         className="ml-20 rounded-lg"
         />) :
         <div className="ml-20 rounded-lg w-[400px]">
+          Loading...
           </div>}
         <div className="circle1">
         <h2>In a nutshell</h2>
@@ -45,9 +46,6 @@ const AboutTest: React.FC = () => {
         <div className="circle3">
         <h2>Experience</h2>
         </div>
-        </div>
-        <div key="c">
-        <SocialLinks />
         </div>      
       </QueueAnim>
     </OverPack>
