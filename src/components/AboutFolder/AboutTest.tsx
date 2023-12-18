@@ -1,11 +1,29 @@
 import "../../style/About.css"
+import { useState } from "react"
 import Profilbildbw from "../../assets/Profilbildbw.jpg"
 import { OverPack } from "rc-scroll-anim";
 import TweenOne from "rc-tween-one";
 import QueueAnim from "rc-queue-anim";
+import { LoadingOutlined } from "@ant-design/icons"
+import { Spin } from "antd"
+import Nutshell from "./Circles/Nutshell";
+import Education from "./Circles/Education";
+import Experience from "./Circles/Experience";
 
 const AboutTest: React.FC = () => {
+  const [isNutShellOpen, setIsNutShellOpen] = useState<boolean>(false);
+  const [isEducationOpen, setIsEducationOpen] = useState<boolean>(false);
+  const [isExpOpen, setIsExpOpen] = useState<boolean>(false);
 
+  const showNutShell = () => {
+    setIsNutShellOpen(true);
+  };
+  const showEducation = () => {
+    setIsEducationOpen(true);
+  };
+  const showExp = () => {
+    setIsExpOpen(true);
+  };
     return (
         <>
 <OverPack
@@ -34,17 +52,39 @@ const AboutTest: React.FC = () => {
         className="ppic"
         />) :
         <div className="ppic">
-          Loading..
+          <div className="flex items-center justify-center">
+          <Spin indicator={
+          <LoadingOutlined style={{ fontSize: 24}} spin />
+          }
+          />
+          </div>
           </div>}
-        <div className="circle1">
+        <div 
+        onClick={showNutShell}
+        className="circle1">
         <h2>In a nutshell</h2>
         </div>
-        <div className="circle2">
+        {isNutShellOpen ? <Nutshell 
+        isNutShellOpen={isNutShellOpen} 
+        setIsNutShellOpen={setIsNutShellOpen}/> : null}
+
+        <div 
+        onClick={showEducation}        
+        className="circle2">
         <h2>Education</h2>
         </div>
-        <div className="circle3">
+        {isEducationOpen ? <Education 
+        isEducationOpen={isEducationOpen} 
+        setIsEducationOpen={setIsEducationOpen}/> : null}
+
+        <div 
+        onClick={showExp}
+        className="circle3">
         <h2>Experience</h2>
         </div>
+        {isExpOpen ? <Experience 
+        isExpOpen={isExpOpen} 
+        setIsExpOpen={setIsExpOpen}/> : null}
         </div>      
       </QueueAnim>
     </OverPack>

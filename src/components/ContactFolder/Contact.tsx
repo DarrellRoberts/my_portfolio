@@ -1,5 +1,5 @@
 import "../../style/Contact.css"
-import SocialLinks from "../AboutFolder/SocialLinks"
+import SocialLinks from "./SocialLinks"
 
 const Contact:React.FC = () => {
     return (
