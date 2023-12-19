@@ -22,6 +22,7 @@
         box-shadow: -1px 7px 15px 6px #0000007c;
         align-self: center;
         margin-bottom: 30px;
+        margin-left: 0px;
     }
     .justify-between {
         flex-direction: column;
@@ -29,21 +30,26 @@
     .circle1, .circle2, .circle3 {
         width: 100px;
         height: 100px;
+        margin-top: 40px;
     }
     .circle1 h2, .circle2 h2, .circle3 h2 {
         font-size: 1rem;
     }
+    .circle3 {
+        transform: translateX(-100px);
+        margin-right: none;
+    }
     @keyframes animateCircles {
-        0% {transform: translateX(100px)};
+        0% {transform: translateX(75px)};
         /* 100% {transform: translateY(100px)}; */
     }
     
     @keyframes animateCircles2 {
-        0% {transform: translateX(150px)};
+        0% {transform: translateX(100px)};
     }
     
     @keyframes animateCircles3 {
-        0% {transform: translateX(-100px)};
+        0% {transform: translateX(0px)};
         /* 100% {transform: translateY(-100px)}; */
     } 
 }
