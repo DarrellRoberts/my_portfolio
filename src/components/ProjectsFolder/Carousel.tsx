@@ -238,9 +238,9 @@ const Carousel = ({ className = 'details-switch-demo' }) => {
         <h1 key="h1">{item[i].title}</h1>
         <em key="em" style={{ background: item.background }} />
         <p key="p">{item[i].content}</p>
-        <span key="span"><a href={item[i].link}>{item[i].link ? `URL` : null}</a></span>
+        <span key="span"><a target="_blank" href={item[i].link}>{item[i].link ? `URL` : null}</a></span>
         <br/>
-        <a key="a" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
+        <a key="a" target="_blank" href={item[i].Githublink}>{item[i].Githublink ? `GitHub Repository` : null}</a>
         <div key="div">{item[i].stack}</div>
       </QueueAnim>
     </Element>
