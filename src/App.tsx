@@ -17,12 +17,13 @@ import ContactDE from "./components copy/ContactFolderDE/Contact"
 
 
 const App: React.FC = () => {
-  const [showGerman, setShowGerman] = useState<boolean>(true)
+  const [showGerman, setShowGerman] = useState<boolean>(false)
   return (
     <>
   <LanguageToggle showGerman={showGerman} setShowGerman={setShowGerman} />
 <Routes>
-    <Route path="/" element={showGerman ? (
+  {showGerman ?
+    <Route path="/de" element={
     <>
     <HeaderDE />
     <HeroDE />
@@ -31,9 +32,10 @@ const App: React.FC = () => {
     <AnimateSkillsDE />
     <ContactDE />
     </>
-    ) 
-    : (
-      <>
+    }
+     />
+    : <Route path="/" element={
+    <>
     <Header />
     <Hero />
     <AboutTest2 />
@@ -41,7 +43,9 @@ const App: React.FC = () => {
     <AnimateSkills />
     <Contact />
     </>
-  )}/>
+    }
+    />
+  }
 </Routes>
     </>
   );
