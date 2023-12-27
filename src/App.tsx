@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import Contact from "./components/ContactFolder/Contact"
 import AboutTest2 from "./components/AboutFolder/AboutTest2"
 import {Routes, Route} from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import LanguageToggle from "./LanguageToggle";
 import HeaderDE from "./components copy/HeaderDE"
 import HeroDE from "./components copy/HeroFolderDE/Hero"
@@ -18,11 +18,17 @@ import ContactDE from "./components copy/ContactFolderDE/Contact"
 
 const App: React.FC = () => {
   const [showGerman, setShowGerman] = useState<boolean>(false)
+
+  const path = window.location.pathname
+  useEffect (() => {
+if (path === "/de") {
+  setShowGerman(true)
+}
+  }, [])
   return (
     <>
   <LanguageToggle showGerman={showGerman} setShowGerman={setShowGerman} />
 <Routes>
-  {showGerman ?
     <Route path="/de" element={
     <>
     <HeaderDE />
@@ -34,7 +40,7 @@ const App: React.FC = () => {
     </>
     }
      />
-    : <Route path="/" element={
+    <Route path="/" element={
     <>
     <Header />
     <Hero />
@@ -45,7 +51,6 @@ const App: React.FC = () => {
     </>
     }
     />
-  }
 </Routes>
     </>
   );
