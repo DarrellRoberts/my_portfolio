@@ -24,8 +24,8 @@ content: "Use the arrows to navigate through my previous or ongoing projects.",
 title: 'Portfolio Carousel',
 },
 {
-  content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser.",
-  title: 'The BookClub Brothers (Solo Project)',
+  content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. This is my current project so bear with me if it's not complete. Stay tuned!",
+  title: 'The BookClub Brothers (Solo Project - Current Project)',
   stack: (
   <div className="flex justify-evenly mt-3">
   <Popover title="React">
