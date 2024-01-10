@@ -24,6 +24,44 @@ content: "Use the arrows to navigate through my previous or ongoing projects.",
 title: 'Portfolio Carousel',
 },
 {
+  content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser.",
+  title: 'The BookClub Brothers (Solo Project)',
+  stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="React">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  </Popover>
+  <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
+  </Popover>
+  <Popover title="Tailwind CSS">
+<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
+  </Popover>
+  </div>
+  ),
+  link: "https://bookclub-brothers.netlify.app/",
+  Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend"
+  ,
+  },
+  {
+    content: "This is the API I created for the BookClub Brothers website.",
+    title: 'The BookClub Brothers API (Solo Project)',
+    stack: (
+      <div className="flex justify-evenly mt-3">
+      <Popover title="MongoDB">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+      </Popover>
+      <Popover title="Express.js">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+      </Popover>
+      <Popover title="Node.js">
+      <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+      </Popover >
+      </div>
+      ),
+    link: "https://bookclubbrothers-backend.onrender.com/books",
+    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
+    },
+{
 content: "TeamUp is an app I created with three other group members at my Full-stack Developer Bootcamp. It's designed for users new to a city in Germany and want to meet new people via sports. The app has many features, such as: account creation and login, profile editing, user rating, badges, searching for events, joining events, creating events, liking events, submitting comments, replying to comments and more. We were selected to present this project at the end of the bootcamp to an audience of over 150 people. I along with another team member worked primarily on the Front-end, whilst our other two group members worked on the Back-end",
 title: 'TeamUp (Group Project - 4)',
 stack: (
@@ -45,25 +83,6 @@ stack: (
 link: "https://teamup-de.netlify.app/",
 Githublink:"https://github.com/hari-pace/TeamUp"
 ,
-},
-{
-content: "The BookClub Brothers is a website I created that is dedicated to a bookclub I formed with my old school friends in 2020. We all live in different countries so formed the club as a way of keeping in touch, whilst also reading fantastic books. This is a Full Stack project and so far has the following capabilities: jwt account registration and login, Cloudinary photo upload, user statistics, submit and edit book ratings, new book suggestion and book randomiser. I have created the Backend and API so far, which you can view. I am currently working on the Frontend which will come later.",
-title: 'The BookClub Brothers API (Solo Project)',
-stack: (
-  <div className="flex justify-evenly mt-3">
-  <Popover title="MongoDB">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
-  </Popover>
-  <Popover title="Express.js">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
-  </Popover>
-  <Popover title="Node.js">
-  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
-  </Popover >
-  </div>
-  ),
-link: "https://bookclubbrothers-backend.onrender.com/books",
-Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
 {
 content: "This Pokifight game was created by myself and another group member. I took on the role of the Front-end developer whilst they took over the Back-end. We used a pokemon API in order to fetch and display over 800 characters. Then we added multiple features, such as: username entry, enable and disable soundtrack, player selection, tutorial, opponent randomiser, game mechanics and a dynamic player leaderboard.",
@@ -121,15 +140,21 @@ const dataArray:data[] = [
   },
   {
     pic:'',
-    map: "https://i.imgur.com/1RoPh6h.png",
-    color: '#93a5ca',
-    background: '#8298c6',
+    map: "https://i.imgur.com/QLkieHk.png",
+    color: '#808080',
+    background: '#000',
   },
   {
     pic: '',
     map: 'https://i.imgur.com/T2aJwcz.png',
     color: 'rgb(72, 150, 72)',
     background: 'rgb(43, 88, 43)',
+  },
+  {
+    pic:'',
+    map: "https://i.imgur.com/1RoPh6h.png",
+    color: '#93a5ca',
+    background: '#8298c6',
   },
   {
     pic: '',
