@@ -22,33 +22,28 @@ const textData = [
   {
     content: "Verwende die Pfeile, um durch meine bisherigen oder laufenden Projekte zu navigieren.",
     title: 'Portfolio',
-  }
-  ,
+  },
+  {
+    content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die meinem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit geschaffen, in Kontakt zu bleiben, während wir gleichzeitig fantastische Bücher lesen. Dies ist ein Full-Stack-Projekt und verfügt bisher über folgende Funktionen: JWT-Kontoanmeldung und -anmeldung, Cloudinary-Fotoupload, Benutzerstatistiken, Einreichen und Bearbeiten von Buchbewertungen, neue Buchvorschläge und Buchzufallsgenerator.",
+    title: 'The BookClub Brothers (Soloprojekt)',
+    stack: (
+    <div className="flex justify-evenly mt-3">
+    <Popover title="React">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+    </Popover>
+    <Popover title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="50" height="50" alt="TypeScript" />
+    </Popover>
+    <Popover title="Tailwind CSS">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="50" height="50" alt="TailwindCSS" />
+    </Popover>
+    </div>
+    ),
+    link: "https://bookclub-brothers.netlify.app/",
+    Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Frontend"
+    ,
+    },
 {
-content: "TeamUp ist eine App, die ich mit drei anderen Gruppenmitgliedern während meines Full-Stack Developer Bootcamps erstellt habe. Sie ist für Benutzer konzipiert, die über Sport neue Leute kennenlernen möchten. Die App verfügt über viele Funktionen, darunter: Kontoerstellung und -anmeldung, Profilbearbeitung, Benutzerbewertung, Abzeichen, Suche nach Veranstaltungen, Teilnahme an Veranstaltungen, Erstellung von Veranstaltungen, Liken von Veranstaltungen, Abgeben von Kommentaren, Beantworten von Kommentaren und mehr. ",
-title: 'TeamUp (Gruppenprojekt - 4)',
-stack: (
-<div className="flex justify-evenly mt-3">
-<Popover title="MongoDB">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
-</Popover>
-<Popover title="Express.js">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
-</Popover>
-<Popover title="React.js">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
-</Popover>
-<Popover title="Node.js">
-<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
-</Popover >
-</div>
-),
-link: "https://teamup-de.netlify.app/",
-Githublink:"https://github.com/hari-pace/TeamUp"
-,
-},
-{
-content: "Die BookClub Brothers ist eine Website, die ich erstellt habe und die einem Buchclub gewidmet ist, den ich 2020 mit meinen alten Schulfreunden gegründet habe. Wir leben alle in verschiedenen Ländern, daher haben wir den Club als Möglichkeit gegründet, in Kontakt zu bleiben und gleichzeitig fantastische Bücher zu lesen. Dies ist ein Full-Stack-Projekt und hat bisher folgende Funktionen: JWT-Kontoerstellung und -anmeldung, Cloudinary-Foto-Upload, Benutzerstatistiken, Bewertung von Büchern, Vorschlag neuer Bücher und Zufallsbuchauswahl.",
+content: "Das ist die von mir erstellte API für die Website der BookClub Brothers.",
 title: 'The BookClub Brothers API (Soloprojekt)',
 stack: (
   <div className="flex justify-evenly mt-3">
@@ -66,6 +61,29 @@ stack: (
 link: "https://bookclubbrothers-backend.onrender.com/books",
 Githublink:"https://github.com/DarrellRoberts/BookClubBrothers_Backend-API",
 },
+{
+  content: "TeamUp ist eine App, die ich mit drei anderen Gruppenmitgliedern während meines Full-Stack Developer Bootcamps erstellt habe. Sie ist für Benutzer konzipiert, die über Sport neue Leute kennenlernen möchten. Die App verfügt über viele Funktionen, darunter: Kontoerstellung und -anmeldung, Profilbearbeitung, Benutzerbewertung, Abzeichen, Suche nach Veranstaltungen, Teilnahme an Veranstaltungen, Erstellung von Veranstaltungen, Liken von Veranstaltungen, Abgeben von Kommentaren, Beantworten von Kommentaren und mehr. ",
+  title: 'TeamUp (Gruppenprojekt - 4)',
+  stack: (
+  <div className="flex justify-evenly mt-3">
+  <Popover title="MongoDB">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="50" height="50" alt="MongoDB" />
+  </Popover>
+  <Popover title="Express.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg" width="50" height="50" alt="Express" />
+  </Popover>
+  <Popover title="React.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="50" height="50" alt="React" />
+  </Popover>
+  <Popover title="Node.js">
+  <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="50" height="50" alt="NodeJS" />
+  </Popover >
+  </div>
+  ),
+  link: "https://teamup-de.netlify.app/",
+  Githublink:"https://github.com/hari-pace/TeamUp"
+  ,
+  },
 {
 content: "Dieses Pokifight-Spiel wurde von mir und einem anderen Gruppenmitglied erstellt. Ich habe die Rolle des Frontend-Entwicklers übernommen, während sie sich um das Backend gekümmert haben. Wir haben eine Pokémon-API verwendet, um über 800 Charaktere abzurufen und anzuzeigen. Dann haben wir mehrere Funktionen hinzugefügt, wie zum Beispiel: Benutzernameneingabe, Aktivieren und Deaktivieren des Soundtracks, Spieler-Auswahl, Tutorial, Zufallsgenerator für Gegner, Spielmechanik und eine dynamische Spieler-Bestenliste.",
 title: 'Pokifight Game (Gruppenprojekt - 2)',
@@ -122,15 +140,21 @@ const dataArray:data[] = [
   },
   {
     pic:'',
-    map: "https://i.imgur.com/1RoPh6h.png",
-    color: '#93a5ca',
-    background: '#8298c6',
+    map: "https://i.imgur.com/QLkieHk.png",
+    color: '#808080',
+    background: '#000',
   },
   {
     pic: '',
     map: 'https://i.imgur.com/T2aJwcz.png',
     color: 'rgb(72, 150, 72)',
     background: 'rgb(43, 88, 43)',
+  },
+  {
+    pic:'',
+    map: "https://i.imgur.com/1RoPh6h.png",
+    color: '#93a5ca',
+    background: '#8298c6',
   },
   {
     pic: '',
