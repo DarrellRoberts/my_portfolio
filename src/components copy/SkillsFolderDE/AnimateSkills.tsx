@@ -1,6 +1,3 @@
-import { OverPack } from "rc-scroll-anim";
-import TweenOne from "rc-tween-one";
-import QueueAnim from "rc-queue-anim";
 import Frontend from "./Frontend";
 import Backend from "./Backend";
 import Database from "./Database";
@@ -10,20 +7,8 @@ import "../../style/SkillsRes.css";
 
 const AnimateSkills = () => {
   return (
-    <OverPack
-    id="skills" 
-    className="overpackCon">      
-    <TweenOne
-        key="0"
-        animation={{ opacity: 1 }}
-        className="code-box-shape"
-          style={{ opacity: 0 }}
-      />
-      <QueueAnim
-        key="queue"
-        className="queueGrid"
-        leaveReverse
-      >
+    <div className="skillsCon">
+    <div className="queueGrid">
         <div key="a" className="skillsTitle">
           Fähigkeiten
         </div>
@@ -38,9 +23,9 @@ const AnimateSkills = () => {
         </div>
         <div key="e" className="toolSkills">
           <Tools /> 
+        </div>
+        </div>
         </div>      
-      </QueueAnim>
-    </OverPack>
   );
 };
 

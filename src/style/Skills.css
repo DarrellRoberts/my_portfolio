@@ -41,9 +41,29 @@ cursor: pointer;
     grid-gap: 3rem;
 }
 
-.overpackCon {
+.skillsCon {
     height: 800px;
     overflow: hidden;
+}
+
+@supports(animation-timeline: view()) {
+.skillsCon {
+    animation: slide ease-in;
+    animation-timeline: view(); 
+}
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(-3rem);
+    opacity: 0;
+    filter: blur(2px);
+    }
+    50% {
+    transform: translateX(0rem);
+    opacity: 1;
+    filter: blur(0px);
+    }
 }
 
 .queueGrid {
