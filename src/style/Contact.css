@@ -1,3 +1,23 @@
+@supports(animation-timeline: view()) {
+.contactCon {
+    animation: slide ease-in;
+    animation-timeline: view(); 
+}
+}
+
+@keyframes slide {
+    0% {
+    transform: translateX(-3rem);
+    opacity: 0;
+    filter: blur(2px);
+    }
+    50% {
+    transform: translateX(0rem);
+    opacity: 1;
+    filter: blur(0px);
+    }
+}
+
 .contactTitle {
     font-family: var(--mainL);
     font-size: 5rem;

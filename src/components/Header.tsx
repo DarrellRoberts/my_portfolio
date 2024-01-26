@@ -7,28 +7,46 @@ import { LeftOutlined } from "@ant-design/icons";
 const Header: React.FC = () => {
 const [scrollPosition, setScrollPosition] = useState(0);
 const [max, setMax] = useState(true);
+const [startFade, setStartFade] = useState(false)
+
+const handleFade = () => {
+    const time = setTimeout(() => {
+        setStartFade(true)
+    }, 1000);
+    return () => clearTimeout(time)
+}
+
+const handleFadeOut = () => {
+        setStartFade(false)
+}
 
 const handleScroll = () => {
 setScrollPosition(window.scrollY);
 if (window.scrollY !== 0) {
 setMax(false)
+handleFadeOut()
 } else {
-setMax(true)
+setMax(true);
+handleFade()
 }
 };
 
 useEffect(() => {
 // Attach the event listener when the component mounts
 window.addEventListener('scroll', handleScroll);
-  
+handleFade();
 // Clean up the event listener when the component unmounts
 return () => {
 window.removeEventListener('scroll', handleScroll);
 };
 },
  []);
- scrollPosition;
-return (
+
+
+console.log(startFade)
+console.log(startFade)
+scrollPosition;
+ return (
     <>
 {max ? (
 <ul className="w-screen bg-primary z-10 flex justify-evenly items-center text-center border-white border-2">
@@ -39,14 +57,20 @@ onClick={() =>
     behavior: "smooth",
         })
 }
-><li className="listHeader">Home</li></a>
+><li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}
+>Home</li></a>
 <a
 onClick={() =>
     window.scrollTo({
     top: 1000,
     behavior: "smooth",
         })
-}><li className="listHeader">About</li></a>
+}>
+<li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}>
+About</li>
+</a>
 <a
 onClick={() =>
     window.scrollTo({
@@ -54,14 +78,19 @@ onClick={() =>
     behavior: "smooth",
         })
 }
-><li className="listHeader">Portfolio</li></a>
+><li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}>
+Portfolio</li></a>
 <a              
 onClick={() =>
     window.scrollTo({
     top: 2700,
     behavior: "smooth",
         })
-}><li className="listHeader">Skills</li></a>
+}>
+<li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}>
+Skills</li></a>
 <a
 onClick={() =>
     window.scrollTo({
@@ -69,12 +98,17 @@ onClick={() =>
     behavior: "smooth",
         })
 }
-><li className="listHeader">Contact</li></a>
+>
+<li 
+className={`listHeader ${startFade ? "animate" : "hidden"}`}>
+Contact
+</li>
+</a>
 </ul>
 ) : (
 <div className="p-8 fixed z-10 border-2 header-transition">
 <LeftOutlined 
-onClick={() => setMax(true)}
+onClick={() => {setMax(true); handleFade()}}
 className="innArr"
 /> 
 </div>    
