@@ -2,13 +2,18 @@ import "../style/Header.css"
 import "../style/HeaderRes.css"
 import { useEffect, useState } from "react";
 import { LeftOutlined } from "@ant-design/icons";
+import { useMediaQuery } from "react-responsive";
 
 
 const HeaderDE: React.FC = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [max, setMax] = useState(true);
-    const [startFade, setStartFade] = useState(false)
-    
+const [scrollPosition, setScrollPosition] = useState(0);
+const [max, setMax] = useState(true);
+const [startFade, setStartFade] = useState(false)
+
+    const handleDesktop = useMediaQuery({
+    query: "(min-device-width: 801px)"
+});
+
     const handleFade = () => {
         const time = setTimeout(() => {
             setStartFade(true)
@@ -44,7 +49,8 @@ const HeaderDE: React.FC = () => {
     scrollPosition;
 return (
     <>
-{max ? (
+{handleDesktop ?
+max ? (
 <ul className="w-screen bg-primary z-10 flex justify-evenly items-center text-center border-white border-2">
 <a
 onClick={() =>
@@ -107,6 +113,9 @@ onClick={() => {setMax(true); handleFade()}}
 className="innArr"
 /> 
 </div>    
+)
+: (
+    <ul></ul>
 )}
 </>
 )
