@@ -27,6 +27,12 @@ const Frontend:React.FC = () => {
         <Popover title="Vite">
         <a href="https://vitejs.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="65" height="65" alt="Vite" /></a>
         </Popover>
+        <Popover title="Next">
+        <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
+        </Popover>
+        <Popover title="Vercel">
+        <a href="https://vercel.com/" target="_blank" rel="noreferrer"><img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" width="36" height="36" alt="Vercel" /></a>
+        </Popover>
         </div>
         </div>
     )
